@@ -1,9 +1,5 @@
-#include <iostream>
+#include <main/main.h>
 
-using namespace std;
-
-int main(int argc, char *argv[])
-{
-	cout << "Hello World!" << endl;
-	return 0;
+std::ostream& main::greet(std::ostream& stream) {
+	return stream << "Hello, world";
 }
